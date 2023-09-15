@@ -160,7 +160,7 @@ router.post("/sendpasswordlink", async (req, res) => {
         from: "resetpass634@gmail.com",
         to: email,
         subject: "Link for password reset",
-        text:`This Link Valid for 2minutes http://localhost:3000/forgot-password/${userFind._id}/${userFind.verifytoken}`
+        text:`This Link Valid for 2minutes https://password-7woa.onrender.com/forgot-password/${userFind._id}/${userFind.verifytoken}`
       }
       console.log(mailOptions)
       transporter.sendMail(mailOptions, (error, info) => {
